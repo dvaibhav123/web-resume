@@ -67,8 +67,11 @@ body{
 	margin:0 auto;
 	position: relative;
 	z-index: -1;
+    float:left;
+/*
 	background-size: 1000px;
 	background: top no-repeat url('https://upload.wikimedia.org/wikipedia/en/2/2c/Microsoft_Word_for_Mac_2011.png');
+*/
 }
 
 .text{
