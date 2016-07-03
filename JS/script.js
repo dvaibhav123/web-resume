@@ -58,10 +58,10 @@ var blinking = function(){
 $(document).ready(NextWord);
 $(document).ready(blinking);
 
-$('.goDown').ready(function(){
-	$(".goDown").click(function() {
-	    $('html, body').animate({
-	        scrollTop: $("#main-content").offset().top
-	    }, 500);
-	});
-});
+//$('.goDown').ready(function(){
+//	$(".goDown").click(function() {
+//	    $('html, body').animate({
+//	        scrollTop: $("#main-content").offset().top
+//	    }, 500);
+//	});
+//});

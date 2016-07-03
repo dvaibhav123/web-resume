@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding:0;
+    border:0;
 	box-sizing: border-box;
 }
 
@@ -60,51 +61,13 @@ body{
 }
 */
 
-/*For top navigation*/
-.top-nav{
-    background: #000000;
-    clear:both;
-}
-
-.top-nav ul{
-    right:0;
-    border:1px solid red;
-    clear:both;
-}
-
-.top-nav li{
-    color:darkblue;
-    list-style: none;
-    display:inline-block;
-    margin:0 5px 0;
-    float:right;
-    clear: right;
-}
-
-a:visited, a:link{
-	color: #f2f2f2;
-	text-decoration: none;
-	padding:5px;
-	border-left:1px solid grey;
-	border-right:1px solid grey;
-}
-
-/**/
-
 /*for message typing*/
 .message-wrapper{
 	/*border:solid 1px red;*/
 	width:50%;
-	min-height:50%;
+	height:50%;
 /*	border: 1px red solid;*/
-	margin:0 auto;
-	position: relative;
-	z-index: -1;
-    float:left;
-/*
-	background-size: 1000px;
-	background: top no-repeat url('https://upload.wikimedia.org/wikipedia/en/2/2c/Microsoft_Word_for_Mac_2011.png');
-*/
+	margin:0 auto 0;
 }
 
 .text{
@@ -117,7 +80,7 @@ a:visited, a:link{
 .text>span{
 	font-size: 35px;
 	font-family: 'Raleway', sans-serif;
-    display: block;
+    margin-top:10%;
 }
 
 .hide{
@@ -165,13 +128,14 @@ a:visited, a:link{
 }
 /**/
 
-
+/*
 #main-content{
-	/*border:1px blue solid;*/
+	border:1px blue solid;
 	height:100%;
 	width:100%;
 	display: none;
 }
+*/
 
 /*#diagonal{
 	background:yellow;
@@ -179,3 +143,50 @@ a:visited, a:link{
 	width:100%;
 	position: absolute;
 }*/
+
+/*for bottom pillars*/
+.pillars-container{
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pillar{
+    margin:0 5% 0;
+    padding:0;
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+    float:left;
+    text-align: center;
+}
+
+.pillar:hover{
+    
+}
+
+.pillar>div{
+    height:80%;
+}
+.pillar>span{
+    display:block;
+    height:20%;
+}
+
+
+.color1{
+    background-color:#225378;
+}
+
+.color2{
+    background-color:#1695A3;
+}
+
+.color3{
+    background-color:#ACF0F2;
+}
+
+.color4{
+    background-color:#EB7F00;
+}
