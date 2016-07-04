@@ -146,47 +146,82 @@ body{
 
 /*for bottom pillars*/
 .pillars-container{
-    height: 25%;
+    height: 15%;
     width: 100%;
     position: absolute;
     bottom: 0;
+    overflow: hidden;
 }
 
-.pillar{
-    margin:0 5% 0;
-    padding:0;
-    height: 100%;
-    width: 15%;
-    display: inline-block;
+
+
+
+.color{
+    height:100%;
+    position: relative;
+    width: 25%;
     float:left;
+    bottom:-20%;
+    transition: color 0.5s;
     text-align: center;
-}
-
-.pillar:hover{
     
 }
 
-.pillar>div{
-    height:80%;
+.color:hover{
+    color:white;
 }
-.pillar>span{
-    display:block;
-    height:20%;
+
+.pillars-container span{
+    position: relative;
+    float:left;
+    z-index: 10;
+    font-size:1.4em;
+    display: inline;
+    padding:5%;
 }
+
+
 
 
 .color1{
-    background-color:#225378;
+/*    background-color:#44B3C2;*/
+    border-top:#44B3C2 5px solid;
+    transition: background-color 0.5s;
 }
 
 .color2{
-    background-color:#1695A3;
+/*    background-color:#F1A94E;*/
+    border-top:#F1A94E 5px solid;
+    transition: background-color 0.5s;
 }
 
 .color3{
-    background-color:#ACF0F2;
+/*    background-color:#E45641;*/
+    border-top:#E45641 5px solid;
+    transition: background-color 0.5s;
 }
 
 .color4{
-    background-color:#EB7F00;
+/*    background-color:#5D4C46;*/
+    border-top:#5D4C46 5px solid;
+    transition: background-color 0.5s;
+}
+
+.color1:hover{
+    background-color:#44B3C2;
+
+}
+
+.color2:hover{
+    background-color:#F1A94E;
+
+}
+
+.color3:hover{
+    background-color:#E45641;
+
+}
+
+.color4:hover{
+    background-color:#5D4C46;
 }

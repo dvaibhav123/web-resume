@@ -65,3 +65,17 @@ $(document).ready(blinking);
 //	    }, 500);
 //	});
 //});
+
+var pillars = function(){
+    $('.color').hover(function(){
+        $(this).animate({bottom: "0%"}, 200);
+//        $( this ).fadeOut( 100 );
+//        $( this ).fadeIn( 500 );
+    });
+    $('.color').mouseleave(function(){
+        $(this).animate({bottom: "-20%"}, 200);
+//        $( this ).fadeOut( 100 );
+//        $( this ).fadeIn( 500 );
+    });
+}
+$(document).ready(pillars);
