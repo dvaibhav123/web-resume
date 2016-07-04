@@ -25,7 +25,8 @@ var NextWord = function(){
                 message.removeClass('blueback');
 				message.css({"color":"white"});
 				print();
-                $('.text').animate({'padding-top':'10%'}, 1000);
+                $('.text').animate({'padding-top':'10%'}, 1000); // intro text moves up
+                $('.pillars-container').animate({'padding-top':'0'}, 1000); //pillars-container moves up
 				$('.blinker').remove();
 			},4000);
 		}
@@ -56,15 +57,16 @@ var blinking = function(){
 }
 
 
-var pillars = function(){
-    
+var pillars = function(){    
+    //individual pillars rise up on hover
     $('.color').hover(function(){
         $(this).animate({bottom: "0%"}, 200);
     });
+//    pillar goes down when clicked else-where
     $('.color').mouseleave(function(){
         $(this).animate({bottom: "-20%"}, 200);
     });
-}
+};
 
 $(document).ready(NextWord);
 $(document).ready(blinking);

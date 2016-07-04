@@ -54,6 +54,7 @@ body{
 /*for bottom pillars*/
 .pillars-container{
     height: 15%;
+    padding-top:15%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -67,7 +68,7 @@ body{
     width: 25%;
     float:left;
     bottom:-20%;
-    transition: color 0.5s;
+    transition: color 0.2s;
     text-align: center;
     background-color: white;
     
@@ -75,6 +76,7 @@ body{
 
 .color:hover{
     color:white;
+    cursor: pointer;
 }
 
 .pillars-container span{
