@@ -17,15 +17,15 @@ var NextWord = function(){
 	else{
 		if(counter2<mArray.length){
 			setTimeout(function(){
-				message.css({"background-color":"#333333", "color":"#f2f2f2"});
+                message.addClass('blueback');
+				message.css({"color":"#f2f2f2"});
 			},3500);
 			setTimeout(function(){
 				message.text(" ");
-				message.css({"background-color":"#ffffff", "color":"#333333"});
+                message.removeClass('blueback');
+				message.css({"color":"white"});
 				print();
-				$('.down').animate({opacity:0.7},"slow",function(){
-					$('#main-content').toggle();
-				});
+                $('.text').animate({'padding-top':'10%'}, 1000);
 				$('.blinker').remove();
 			},4000);
 		}
@@ -55,27 +55,17 @@ var blinking = function(){
 	}
 }
 
-$(document).ready(NextWord);
-$(document).ready(blinking);
-
-//$('.goDown').ready(function(){
-//	$(".goDown").click(function() {
-//	    $('html, body').animate({
-//	        scrollTop: $("#main-content").offset().top
-//	    }, 500);
-//	});
-//});
 
 var pillars = function(){
+    
     $('.color').hover(function(){
         $(this).animate({bottom: "0%"}, 200);
-//        $( this ).fadeOut( 100 );
-//        $( this ).fadeIn( 500 );
     });
     $('.color').mouseleave(function(){
         $(this).animate({bottom: "-20%"}, 200);
-//        $( this ).fadeOut( 100 );
-//        $( this ).fadeIn( 500 );
     });
 }
+
+$(document).ready(NextWord);
+$(document).ready(blinking);
 $(document).ready(pillars);
