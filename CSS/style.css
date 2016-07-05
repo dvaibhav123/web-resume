@@ -50,6 +50,44 @@ body{
 	opacity: 0;
 }
 /**/
+.slide-wrapper{
+    height:88%;
+    width:100%;
+    overflow: hidden;
+}
+.slide{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.slide1{
+    background-color:#44B3C2;
+}
+
+.slide2{
+    background-color:#F1A94E;
+}
+
+.slide3{
+    background-color:#E45641;
+}
+
+.slide4{
+    background-color:#5D4C46;
+}
+
+.close{
+    float:right;
+    font-size: 2em;
+    padding:1%;
+    margin-right:1%;
+    color:white;
+    background-color:darkred;
+    cursor:pointer;
+}
+
+/**/
 
 /*for bottom pillars*/
 .pillars-container{
@@ -91,42 +129,47 @@ body{
 .color1{
 /*    background-color:#44B3C2;*/
     border-top:#44B3C2 5px solid;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
+    transition: bottom 0.3s;
 }
 
 .color2{
 /*    background-color:#F1A94E;*/
     border-top:#F1A94E 5px solid;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
+    transition: bottom 0.3s;
 }
 
 .color3{
 /*    background-color:#E45641;*/
     border-top:#E45641 5px solid;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
+    transition: bottom 0.3s;
 }
 
 .color4{
 /*    background-color:#5D4C46;*/
     border-top:#5D4C46 5px solid;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
+    transition: bottom 0.3s;
 }
 
 .color1:hover{
     background-color:#44B3C2;
-
+    bottom:0%;
 }
 
 .color2:hover{
     background-color:#F1A94E;
-
+    bottom:0%;
 }
 
 .color3:hover{
     background-color:#E45641;
-
+    bottom:0%;
 }
 
 .color4:hover{
     background-color:#5D4C46;
+    bottom:0%;
 }

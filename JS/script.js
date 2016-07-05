@@ -7,9 +7,9 @@ var test = new Array();
 
 
 
-var NextWord = function(){
+var NextWord = function () {
 	// $('.message').css({"background-color":"#f2f2f2", "color":"#333333"});
-	counter2+=1;
+	counter2 += 1;
 	test = mArray[counter2];
 	if(counter2<mArray.length-1){
 		print();
@@ -56,18 +56,32 @@ var blinking = function(){
 	}
 }
 
-
-var pillars = function(){    
-    //individual pillars rise up on hover
-    $('.color').hover(function(){
-        $(this).animate({bottom: "0%"}, 200);
+var slider = function(){
+    $('.color').click(function(){
+        $('.slide').addClass('hide');
     });
-//    pillar goes down when clicked else-where
-    $('.color').mouseleave(function(){
-        $(this).animate({bottom: "-20%"}, 200);
+    $('.close').click(function(){
+        $('.slide').addClass('hide');
+        $('.slide-default').removeClass('hide');
+    });
+    
+    
+    $('.color1').click(function(){
+        $('.slide1').removeClass('hide');
+    });
+    $('.color2').click(function(){
+        $('.slide2').removeClass('hide');
+    });
+    $('.color3').click(function(){
+        $('.slide3').removeClass('hide');
+    });
+    $('.color4').click(function(){
+        $('.slide4').removeClass('hide');
     });
 };
 
+
 $(document).ready(NextWord);
 $(document).ready(blinking);
-$(document).ready(pillars);
+//$(document).ready(pillars);
+$(document).ready(slider);
